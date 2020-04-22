@@ -1,7 +1,132 @@
-h1 {
-	color: blue;
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2:400,500,600,700,800|Lobster&display=swap');
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+*{
+	margin: 0px;
+	padding: 0px;
 }
 
-span {
-	border: 2px solid red;
+body {
+	background: url(Design2.jpg) no-repeat center top;
+	background-size: cover;	
+}	
+.content {
+	display: flex;
+	flex-direction: column;
+	margin-left: 70px;
+	height: 757px;
+	width: 600px;
+}
+.title {
+	margin-top: 50px;
+}
+.summer {
+	display: inline-block;
+	font-family: 'Lobster', cursive;
+	font-size: 66px;
+	color: #d2554c;
+	position: relative;
+	left: 38px;
+	top: 33px;
+}
+.tropical_party {
+	display: inline-block;
+	font-family: 'Lobster', cursive;
+	font-size: 90px;
+	color: #85bdb7;
+}
+p {
+	padding-top: 20px;
+	font-family: 'Baloo Bhaina 2', cursive;
+	line-height: 27px;
+}
+.button a {
+	text-decoration: none;
+	background: gold;
+	padding: 9px 45px;
+	border-radius: 54px;
+	color: #fff;
+	font-family: 'Baloo Bhaina 2', cursive;
+	transition: background .3s ease;
+	font-size: 21px;
+}
+.button {
+	margin-top: 70px;
+}
+.button a:hover {
+	background: goldenrod;
+}
+nav ul {
+	display: flex;
+	list-style-type: none;
+	font-family: 'Baloo Bhaina 2', cursive;
+	justify-content: flex-end;
+	padding: 30px 70px;
+}
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+nav ul li {
+	padding: 0 20px;
+}
+footer {
+	margin-top: 230px;
+}
+.social-icons-1 {
+    padding: 0;
+    list-style: none;
+    /*margin-top: 230px;*/
+}
+.social-icons-1 li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+   padding-right: 55px;
+}
+
+.social-icons-1 i,
+.social-icons-1 img {
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    width: 24px;
+    height: 14px;
+    text-align:center;
+    transition: all 0.3s ease-out;
+}
+.social-icons-1 a {
+    display: inline-block;
+}
+.social-icons-1 a:before {
+    transform: scale(1);
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #337AB7, #2d6b9f);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-out;
+}
+.social-icons-1 a:hover:before {
+    transform: scale(0);
+    transition: all 0.3s ease-in;
+}
+.social-icons-1 a:hover i,
+.social-icons-1 a:hover img {
+    transform: scale(1.8);
+    color: #337AB7;
+    transition: all 0.3s ease-in;
+}
+.username {
+	font-family:'Baloo Bhaina 2', cursive;
+	padding-left: 10px;
 }
